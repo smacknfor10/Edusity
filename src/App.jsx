@@ -6,10 +6,13 @@ import Title from './Components/Title/Title'
 import About from './Components/About/About'
 import Campus from './Components/Campus/Campus'
 import Testimonials from './Components/Testimonials/Testimonials'
+import Contact from './Components/Contact/Contact'
+  import { ToastContainer } from 'react-toastify';
 
 const App = () => {
     return (
       <div>
+        <ToastContainer />
         <Navbar />
         <Hero />
         <div className='container'>
@@ -20,6 +23,8 @@ const App = () => {
           <Campus />
           <Title subTitle='TESTINOMIALS' title='What Student Says' />
           <Testimonials />
+          <Title subTitle='Contact Us' title='Get In Touch' />
+          <Contact />
         </div>
       </div>
     )
